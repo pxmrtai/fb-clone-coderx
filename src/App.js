@@ -7,7 +7,7 @@ import Login from "./components/Login/Login";
 import { useStateValue } from "./StateProvider";
 
 function App() {
-  const [{user}, dispatch] = useStateValue()
+  const [{ user }, dispatch] = useStateValue();
   return (
     <div className="app">
       {/* Header */}
@@ -19,12 +19,11 @@ function App() {
           {/* App body */}
           <div className="app__body">
             <Sidebar />
-
             <Feed />
             {/* Widgets */}
             <Widgets />
           </div>
-          </>
+        </>
       )}
     </div>
   );
